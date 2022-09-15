@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="tickets.mocomuseum.com_en_tickets__gl=1_ogh878__gcl_aw_R0NMLjE2NjMyMzU1MTAuRUFJYUlRb2JDaE1JbUttVmpjT1ctZ0lWQndPTENoMUdNdzlmRUFBWUFTQUFFZ0pUalBEX0J3RQ..&_ga=2.203864407.637625904.1663235511-858997780.1637857898&_gac=1.138224260.1663235511.EA.png" width="375px" alt="tickets pagina">
  
 </details>
 
