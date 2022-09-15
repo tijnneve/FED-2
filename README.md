@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="mocomuseum.com__utm_source=googleads&utm_medium=sea&utm_campaign=perform20&utm_content=pros&gclid=EAIaIQobChMImKmVjcOW-gIVBwOLCh1GMw9fEAAYASAAEgJTjPD_BwE(iPhone SE).png" width="375px" alt="homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
