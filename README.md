@@ -70,21 +70,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Twee vingers vast test (aan beide handen):
+  - Prima te doen, het is vooral scrollen en alles is breed opgezet. Dit werkt dus goed.
+  - Selector op detailpagina gaat goed.
+  Shocks:
+  - Prima te doen, het is vooral veel scrollen en weinig precieze knoppen of dingen die je in moet vullen.
+  - Links zijn breed opgezet en zijn dus goed te selecteren. Hierdoor is dan kans dat je perongeluk op een verkeerde link drukt ook niet zo groot.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   - Geen darkmode aanwezig
   Diabetic / vlekken in zicht:
-  - font in wit / roze is zeer slecht leesbaar.
-  - strepen zijn afleidend.
+  - Font in wit / roze is zeer slecht leesbaar.
+  - Strepen zijn afleidend.
   - Amsterdam / Barcelona button en tekst slecht leesbaar.
-  - dun font zwart & roze combi slecht leesbaar, hover is wel heel duidelijk.
-  - streepje onder interactieve elementen waar je overheen hovert is ook heel duidelijk.
+  - Dun font zwart & roze combi slecht leesbaar, hover is wel heel duidelijk.
+  - Streepje onder interactieve elementen waar je overheen hovert is ook heel duidelijk.
   Kleurenblind:
-  - wit wordt geel, opzich geen grote beperking. Alleen de geel/roze combi slechter zichtbaar.
+  - Wit wordt geel, opzich geen grote beperking. Alleen de geel/roze combi slechter zichtbaar.
+  - Overige kleuren en contrasten zijn prima zichtbaar, en geen beperking voor iemand die kleurenblind is.
+  Blur:
+  - Titel is goed leesbaar, de rest niet.
+  - Meer info niet leesbaar, font is te dun.
+  - Hoverstate met een streep eronder is erg fijn, hierdoor zie je dat een element interactief is.
+  - Detailpagina niet leesbaar, font is te dun. Grijs op wit valt weg. Goed dat de aantallen apart worden aangegeven, dit maakt het duidelijker.
+  Staar (midden blind):
+  - Afbeeldingen vallen weg, zijn in midden weergegeven.
+  - Tekst op de homepagina valt weg.
+  - Detailpagina tekst niet te lezen, hover met roze als enige duidelijk omdat het contrast zo groot is.
+  Laag contrast:
+  - Dunne witte tekst valt weg op roze.
+  - Tekst moet dikker.
 
 </details>
 
