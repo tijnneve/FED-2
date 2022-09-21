@@ -59,15 +59,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Mijn bevindingen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Meerdere keren wordt een button/link benoemd als een tekst element, de functie is dan dus niet duidelijk.
+  - Ticket selecteren niet mogelijk met screenreader. Dit moet dus duidelijk benoemd worden, ook omdat dit een belangrijke functie is van de site.
+  - Logo wordt niet benoemd als link, terwijl dit een belangrijk element is van de site om terug naar de homepage te navigeren.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Tab werkt goed, alle elementen die je nodig hebben kun je bereiken. Volgorde van de elementen waar je doorheen tabt zijn logisch.
+  - Titel van de verschillende stappen op je detailpagina zijn niet interactief. Dit is verwarrend en zou makkelijk zijn als dit wel zo zou zijn.
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -77,9 +76,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Geen darkmode aanwezig
+  Diabetic / vlekken in zicht:
+  - font in wit / roze is zeer slecht leesbaar.
+  - strepen zijn afleidend.
+  - Amsterdam / Barcelona button en tekst slecht leesbaar.
+  - dun font zwart & roze combi slecht leesbaar, hover is wel heel duidelijk.
+  - streepje onder interactieve elementen waar je overheen hovert is ook heel duidelijk.
+  Kleurenblind:
+  - wit wordt geel, opzich geen grote beperking. Alleen de geel/roze combi slechter zichtbaar.
 
 </details>
 
