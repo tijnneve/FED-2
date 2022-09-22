@@ -138,10 +138,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Tijn           | Yente              | student 3    | student 4        |
+  | Tijn           | Yente              | Tufan.       | student 4        |
   | ---            | ---                | ---          | ---              |
-  | breakdown      | HTML               | en ik dit    | en dan ik dat    |
-  | achtergrond    |                    | nog een punt | dit wil ik zeker |
+  | breakdown      | HTML               | header       | breakdown        |
+  | achtergrond    |                    |              | articles         |
   | ...            | ...                | ...          | ...              |
 
 
