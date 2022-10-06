@@ -1,0 +1,290 @@
+/* geen idee wat dit doet */
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url(fonts/futura\ medium\ bt.ttf);
+}
+
+@font-face {
+    font-family: Futura-Light;
+    src: url(fonts/futura\ light\ bt.ttf);
+}
+
+@font-face {
+    font-family: Caslon;
+    src: url(fonts/CaslonGraD.ttf);
+}
+
+body {
+    font-family: Futura-light;
+}
+
+main {
+    background-color: rgb(255,130,203);
+}
+
+/*/////////////////// HEADER ///////////////////*/
+
+
+/* navigatie header positie elementen */
+
+nav:first-of-type {
+    display: flex;
+    gap: 1em;
+}
+
+nav:first-of-type a {
+    margin-right:auto;
+}
+
+/*navigatie header positie logo */
+
+nav:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+}
+
+/*navigatie header styling button */
+
+header button {
+    background-color: rgb(255,130,203);
+
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+
+    font-size: 0.875em;
+    font-family: Futura-Bold;
+    color:white;
+}
+
+/*navigatie header styling button */
+
+header select {
+    border: none;
+    font-family: Futura-Light;
+}
+
+
+
+
+
+/*/////////////////// Main ///////////////////*/
+
+/*section 1 positie */
+
+section:first-of-type {
+    height: 32em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+p:first-of-type {
+    padding-top: 1em;
+}
+
+section:first-of-type a {
+    margin-top: 1.5em;
+    color: white;
+
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 8px;
+}
+
+/* font section 1 */
+
+h1:first-of-type {
+    font-size: 4.4em;
+    color: white;
+    font-family: Caslon;
+}
+
+/*section 1 background */
+
+section:first-of-type {
+    background-image: url(images/MocoMuseumAmsterdam_buitenkant.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*section 2 positie */
+
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 4em;
+
+    background-color: rgb(255,130,203)
+}
+
+p:nth-of-type(2) {
+    padding-top: 1em;
+}
+
+section:nth-of-type(2) a {
+    margin-top: 1.5em;
+}
+
+h2:first-of-type {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* font section 2 */
+section:nth-of-type(2) {
+    color: white;
+}
+
+h2:first-of-type {
+    font-family: Caslon;
+    font-size: 2.1em;
+}
+
+section:nth-of-type(2) a {
+    color: black;
+    font-family: Futura-Bold;
+}
+
+/*section 2 styling link */
+
+section:nth-of-type(2) a {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 8px;
+}
+
+/*section 3 positie */
+
+section:nth-of-type(3) ul {
+	padding:0;
+    margin:1em;
+	list-style:none;
+	
+	display:grid;
+	gap:1em;
+}
+
+section:nth-of-type(3) ul li {
+	background-color: white;
+    border-radius: 8px;
+}
+
+section:nth-of-type(3) ul li img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/*section 3 positie in li 2 */
+
+section:nth-of-type(3) ul li:nth-of-type(2) ul{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) ul li:nth-of-type(2) {
+    grid-row-start: -1;
+}
+
+
+/* section 3 styling elementen in li 2 */
+
+section:nth-of-type(3) ul li:nth-of-type(2) ul li:nth-of-type(2) {
+    background-image: url(images/the_new_amsterdam.png);
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) ul li:nth-of-type(1) {
+    margin: 1em;
+}
+
+/*section 3 positie in li 3 */
+
+section:nth-of-type(3) ul li:nth-of-type(3) ul{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(3) ul li:nth-of-type(2) {
+
+    grid-row-start: -1;
+}
+
+/* section 3 styling elementen in li 3 */
+
+section:nth-of-type(3) ul li:nth-of-type(3) ul li:nth-of-type(2) {
+    background-image: url(images/Banksy_Amsterdam.jpg);
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(3) ul li:nth-of-type(1) {
+    margin: 1em;
+}
+
+/* Section 3 font H3 */
+
+section:nth-of-type(3) h3 {
+    font-family: Caslon;
+    font-size: 2em;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) h3 {
+    font-size: 1.125em;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(3) h3 {
+    font-size: 1.125em;
+}
+
+
+
+
+
+
+
+
+
