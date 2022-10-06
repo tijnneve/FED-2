@@ -128,7 +128,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
@@ -148,10 +148,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Header niet als list items
+  - Keuzes maken tussen relevante elementen van de homepage
 
 </details>
 
@@ -161,11 +159,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Het is nog niet gelukt om een video als achtergrond te plaatsen. Hoe download is een video van de site. Hoe zorg ik ervoor dat de video ook achter de
+    header komt, moet ik dan een section toevoegen?
+  - Het lukt niet om mijn header sticky te maken.
+  - Ik moet de font kleuren nog aanpassen naar custom properties, heb ze nu apart benoemd.
+  - Mijn code is niet super efficient geschreven, ik heb het gevoel dat het soms bondiger kan. Hoe erg is dit?
 
 
   ### Agenda voor meeting
