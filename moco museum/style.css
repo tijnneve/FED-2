@@ -203,11 +203,34 @@ section:nth-of-type(3) ul li {
     border-radius: 8px;
 }
 
-section:nth-of-type(3) ul li img {
-    max-height: 100%;
-    max-width: 100%;
+/*section 3 positie in li 1 */
+
+section:nth-of-type(3) ul li:nth-of-type(1) ul {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
 }
 
+section:nth-of-type(3) ul li:nth-of-type(1) ul li:nth-of-type(2) {
+    order:-100;
+    /*img komt bovenaan te staan*/
+}
+
+section:nth-of-type(3) ul li:nth-of-type(1) ul li:nth-of-type(1) {
+    margin: 1em;
+}
+
+
+/*section 3 styling elementen in li 1 */
+
+section:nth-of-type(3) ul li:nth-of-type(1) img {
+    max-height: 100%;
+    max-width: 100%;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 
 /*section 3 positie in li 2 */
 
