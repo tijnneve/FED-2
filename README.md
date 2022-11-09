@@ -132,7 +132,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Breakdown schets ging goed, ik vind het moeilijk om als ik ga coderen een begin te maken. Door een goede breakdownschets te maken heb
+  ik meer overzicht en vind ik het makkelijker om een start te maken aan het schrijven van HTML. Ik kan een aantal dingen filteren, om zo 
+  niet relevante elementen weg te laten op de site.
 
 
   ### Agenda voor meeting
@@ -201,31 +203,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+Screenreader:
+- koppen worden duidelijk benoemd.
+- aan de img nog een label toevoegen met een zinvolle omschrijving, door de alt tag te veranderen.
+- foto in kleine artikelen nog een label geven, en een link van maken.
+- Moco Barcelona adres, benoemd een lijst.
+- Sommige dagen worden wel benoemd, andere dagen niet.
 
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Tabben:
+- goed te tabben door interactieve elementen.
+- alleen de artikelen nog niet, volledige li moet nog een link worden. Zoals op de website.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Hover:
+- maak het contrast groter in de nav, of kies voor een volledige nieuwe kleur. Hierdoor valt het nog meer op.
+- de artikelen ook een hover state gaven, als ze een link element zijn.
 
+Contrast low:
+- p tekst met video slechter zichtbaar
+- p contrast mag wat groter, de tekst is dun. Dit is al wel beter dan op de originele site.
+- tickets knop beter te lezen in het zwart.
+- plan your visit hover contrast te laag.
 
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Gele bril:
+- duidelijk, contrast is goed te zien. Je ziet alles in een andere tint maar dit maakt het niet minder duidelijk.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Peripheral loss:
+- prima
 
+Diabetic:
+- prima, hover states duidelijk te zien.
 
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Middle vission:
+- er valt een hoop weg, meeste content staat in het midden. Koppen zijn goed te lezen.
 
 </details>
 
@@ -239,7 +248,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb al een goed begin gemaakt aan de home pagina, nog niet begonnen aan de detail pagina. Daar zie ik bestwel tegenop omdat het een form is, en ik 
+  niet echt weet hoe je dit op een mooie manier kunt vormgeven. Ik ga vragen in hoeverre deze moet werken. Verder lukt het niet om een video in section
+  1 te plaatsen.
 
 
   ### Agenda voor meeting
@@ -255,10 +266,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik gebruik teveel UL en LI om elementen te nesten, ik dacht dat ik dit juist als tip had gekregen maar dat heb ik dan verkeerd begrepen. Als het
+  niet anders kan dan kan ik een div gebruiken om elementen te stylen. 
+  - Ik kreeg de tip van Sanne om ipv van een video in section 1 een gif te plaatsen.
+  - ook heb ik een voorbeeld gekregen hoe ik gemakkelijk met behulp van grid de volgorde van verschillende elemten kan aanpassen. Hier had ik moeite mee
+  in de verschillende artikelen.
+  - ik moet nog verschillende states toevoegen aan de interactieve elementen
 
 </details>
 
@@ -272,7 +285,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -282,7 +295,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik wilde een scroll animatie toevoegen waarbij een gedeelte van de pagina mee beweegt als je scrollt. dit is niet gelukt.
+  Ook wilde ik de button voor Amsterdam/Barcelona laten werken, dit is helaas ook nog niet gelukt. Hierbij heb ik geprobeerd om de
+  slide button ook een positie fixed of sticky te geven dat als je er voorbij scrollt deze blijft staan op de pagina.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -298,8 +313,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/howto/howto_css_switch.asp
+  2. https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman
+  3. https://www.w3schools.com/icons/tryit.asp?filename=tryicons_google-gif
+  4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  5. https://css-tricks.com/snippets/css/complete-guide-grid/
 
 </details>
