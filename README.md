@@ -299,7 +299,7 @@ Middle vission:
   Ook wilde ik de button voor Amsterdam/Barcelona laten werken, dit is helaas ook nog niet gelukt. Hierbij heb ik geprobeerd om de
   slide button ook een positie fixed of sticky te geven dat als je er voorbij scrollt deze blijft staan op de pagina.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="FED-2/Schermafbeelding 2022-11-09 om 16.13.41.png" width="375px" alt="bummer">
 </details>
 
 
