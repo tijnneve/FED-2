@@ -1,0 +1,338 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url(fonts/futura\ medium\ bt.ttf);
+}
+
+@font-face {
+    font-family: Futura-Light;
+    src: url(fonts/futura\ light\ bt.ttf);
+}
+
+@font-face {
+    font-family: Caslon;
+    src: url(fonts/CaslonGraD.ttf);
+}
+
+:root {
+    --hoofdkleur-roze: rgb(252 89 189);
+    --schaduw-roze: 0px 0px 10px 0px rgb(252 89 189);
+
+    --hoofdkleur-tekst: black;
+}
+
+/*////////////////////////// positie elementen header ////////////////////*/
+
+header {
+    margin: 0.5em;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header select {
+    margin-top: 2em;
+
+    padding: 0 0 0 1em;
+
+    width: 100%;
+    height: 3.5em;
+}
+
+
+/*////////////////////////// styling elementen header ////////////////////*/
+
+header nav a img {
+    width:6em;
+}
+
+header select {
+    border-radius: 0;
+
+    border: 0.14em solid var(--hoofdkleur-tekst);
+}
+
+/*////////////////////////// positie elementen main ////////////////////*/
+
+/*ruimte links en rechts */
+ul, section {
+    padding: 0 1em 0 1em;
+}
+
+div:nth-of-type(1) ul {
+    padding-top: 1em;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+/*////////////////////////// styling elementen main ////////////////////*/
+
+div:nth-of-type(1) ul {
+    font-family: Futura-Light;
+    font-size: 1.125em;
+
+    padding-bottom: 1em;
+    border-bottom: 0.14em solid var(--hoofdkleur-tekst);
+
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    margin-bottom: 1em;
+
+    list-style: none;
+}
+
+/* styling section 1 */
+
+section:nth-of-type(1) h1 {
+    font-family: Futura-Bold;
+
+    font-size: 1.875em;
+
+    margin-bottom: 1em;
+}
+
+section:nth-of-type(1) p {
+    font-family: Futura-Light;
+    font-size: 1.125em;
+
+    margin-bottom: 3em;
+}
+
+/* positie section 2 */
+
+section:nth-of-type(2) ul li {
+    display: grid;
+
+    grid-template-columns: 1fr 6em;
+}
+
+section:nth-of-type(2) ul li select {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+
+    margin: 0.7em;
+}
+
+
+/* styling section 2 */
+
+section:nth-of-type(2) h2 {
+    font-family: Futura-Light;
+
+    font-size: 1em;
+
+    padding-bottom: 1em;
+}
+
+section:nth-of-type(2) ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+section:nth-of-type(2) ul li {
+    border: solid 0.1em var(--hoofdkleur-tekst);
+    border-radius: 0.3125em;
+
+    margin-bottom:1em;
+}
+
+section:nth-of-type(2) ul li:hover {
+    background-color: var(--hoofdkleur-roze);
+    border: solid 0.1em var(--hoofdkleur-roze);
+
+    box-shadow: var(--schaduw-roze);
+
+    transition: 0.3s;
+}
+
+section:nth-of-type(2) ul li h3{
+    padding-top: .7em;
+    padding-left: .7em;
+
+    font-family: Futura-Light;
+
+    font-size: 1em;
+}
+
+section:nth-of-type(2) ul li p {
+    padding-bottom: .7em;
+    padding-left: .7em;
+
+    font-family: Futura-Bold;
+
+    font-size: 1em;
+}
+
+section:nth-of-type(2) ul li select {
+    font-family: Futura-Bold;
+    font-size: 1.125em;
+
+    border: 0.13em solid var(--hoofdkleur-tekst);
+}
+
+/* positie section 3*/
+
+section:nth-of-type(3) {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 3em;
+}
+
+/* styling section 3*/
+
+section:nth-of-type(3) a{
+    margin-bottom: 0.5em;
+    padding: 1em;
+
+    font-family: Futura-light;
+    font-size: 1.125em;
+
+    border: 0.1em solid var(--hoofdkleur-tekst);
+    border-radius: 0.3125em;
+
+    text-decoration: none;
+    color: black;
+}
+
+section:nth-of-type(3) a:hover {
+    background-color: var(--hoofdkleur-roze);
+
+    box-shadow: var(--schaduw-roze);
+
+    transition: 0.3s;
+}
+
+/*styling elementen section 4*/
+
+section:nth-of-type(4) h2{
+    font-family: Futura-Bold;
+    font-size: 1.3125em;
+
+    padding-top: 2em;
+    padding-bottom:1em;
+}
+
+section:nth-of-type(4) p {
+    font-family: Futura-Light;
+    font-size: 1.125em;
+
+    padding-bottom: 1em;
+}
+
+section:nth-of-type(4) p:nth-last-of-type(1) {
+    font-family: Futura-Bold;
+}
+
+section:nth-of-type(4) a {
+    font-family: Futura-Light;
+    font-size: 1em;
+
+    text-decoration: none;
+    color: black;
+
+    border: 0.14em solid var(--hoofdkleur-roze);
+    border-radius: 0.3125em;
+
+    padding: 1em;
+}
+
+section:nth-of-type(4) a:hover {
+    background-color: var(--hoofdkleur-roze);
+
+    transition: 0.3s;
+}
+
+/*positie elementen section 4*/
+
+section:nth-of-type(4) a {
+    width: 9em;
+
+    padding: 10px 20px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+section:nth-of-type(4) div {
+    margin-top: 3em;
+    margin-bottom: 7em;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+/*///////////////////// styling footer //////////////////////*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    border-top: 0.07em solid black;
+
+    height: 4em;
+}
+
+/*styling button*/
+
+footer button {
+    font-family: Futura-Light;
+    font-size: 1em;
+
+    background-color: var(--hoofdkleur-roze);
+    
+    border: solid 0.1em var(--hoofdkleur-roze);
+    border-radius: 0.3125em;
+
+    box-shadow: var(--schaduw-roze);
+
+    width: 5em;
+
+    padding: 10px 20px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer {
+    opacity: 0.7;
+
+    background-color: white;
+}
+
+/*////////////////////// positie footer //////////////////////*/
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer button {
+    margin: 0.5em;
+}
+

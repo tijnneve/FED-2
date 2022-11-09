@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
     <header>
         <nav>
-            <a href="#">Plan your visit</a>
+            <a href="detail.html">Plan your visit</a>
             <select name="Talenbalk" id="taal">
                 <option value="Engels">EN</option>
                 <option value="Nederlands">NL</option>
                 <option value="Duits">DE</option>
                 <option value="Frans">FR</option>
             </select> 
-            <button>Tickets</button>
+            <button type="tickets">Tickets</button>
         </nav>
         <nav>
             <a href="#">
-                <img width='120' src="images/moco-logo.png" alt="logo_Moco_Museum">
+                <img width='110' src="images/moco-logo.png" alt="logo_Moco_Museum">
             </a>
         </nav>
+        
+        <p>Geen tickets beschikbaar</p>
     </header>
     
     <main>
@@ -44,6 +48,14 @@
                 Thank you for trusting in us and art.
             </p>
             <a href="#">Tickets</a>
+            <div>
+                <p>Amsterdam</p>
+                <label for="location">
+                    <input type="checkbox" name="location" id="location">
+                    <span class="slider"></span>
+                </label>
+                <p>Barcelona</p>
+            </div>
         </section>
 
         <section>
@@ -111,38 +123,77 @@
                 experience for you! Thank you for trusting in us and art.
             </p>
 
-            <ul>
-                <li>
-                    <h3>Moco Barcelona</h3>
-                </li>
-                <li>
-                    <address>
-                        Carrer de Montcada 25
-                        EL Born district
-                        08003 Barcelona, Spain
-                    </address>
-                </li>
-                <li>
-                    <h4>Opening Times</h4>
-                    <p>
-                       Mon - Thu <time>10:00 - 20:00</time>
-                       Fri – Sun<time>10:00 - 21:00</time>
-                    </p>
-                </li>
-                <li>
-                    <a href="#">More info</a>
-                </li>
-            </ul>
-            <img src="images/ingang_moco.png" alt="ingang_moco">
+            <div>
+                <h3>Moco Barcelona</h3>
 
+                <address>
+                    Carrer de Montcada 25
+                    EL Born district
+                    08003 Barcelona, Spain
+                </address>
 
+                <h4>Opening Times</h4>
+
+                <p>
+                    Mon - Thu <time>10:00 - 20:00</time>
+                    Fri – Sun<time>10:00 - 21:00</time>
+                </p>
+
+                <img src="images/ingang_moco.png" alt="ingang_moco">
+            </div>
+
+            <a href="#">More info</a>
 
         </section>
 
     </main>
 
     <footer>
+        <div>
+            <h2>Become a Moco Member</h2>
+            <p>
+                Join the community of Art Lovers! Receive extras, plus all the latest and greatest when you become
+                a Moco Member for free.
+            </p>
+            <a href="#">Sign Up</a>
+        </div>
+
+        <a href="#">
+            <img src="images/moco-logo.png" alt="logo_Moco_Museum">
+        </a>
+        
+        <div>
+            <ul>
+                <li><a href="#">About Moco</a></li>
+                <li><a href="#">Moco member</a></li>
+                <li><a href="#">Moco boat tour</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+            </ul>
+        </div>
 
     </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>

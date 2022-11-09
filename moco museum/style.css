@@ -23,12 +23,34 @@
     src: url(fonts/CaslonGraD.ttf);
 }
 
+/*//////////////////////////custom properties ///////////////////////////*/
+
+:root {
+    --hoofdkleur-roze: rgb(255,130,203);
+    --achtergrond-kleur-wit: white;
+
+    --tekstkleur-wit: white;
+    --tekstkleur-zwart: black;
+
+    --hoverkleur-lichtroze: rgb(252,185,227);
+}
+
+/*//////////////////////////// dark mode  ////////////////////////*/
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+    --hoofdkleur-roze: #503047;
+    --achtergrond-kleur-wit: #D0CCD0;
+    }
+}
+
 body {
     font-family: Futura-light;
 }
 
 main {
-    background-color: rgb(255,130,203);
+    background-color: var(--hoofdkleur-roze);
 }
 
 /*/////////////////// HEADER ///////////////////*/
@@ -54,16 +76,22 @@ nav:nth-of-type(2) {
 }
 
 header {
+    /*z index toegevoegd om de boven de slide button te plaatsen */
+    z-index: 1;
+
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: white;
+    background-color: var(--achtergrond-kleur-wit);
+
+    position: sticky;
+    top: 0;
 }
 
 /*navigatie header styling button */
 
 header button {
-    background-color: rgb(255,130,203);
+    background-color: var(--hoofdkleur-roze);
 
     border: none;
     border-radius: 8px;
@@ -74,14 +102,35 @@ header button {
     color:white;
 }
 
+/* styling states van button */
+
+header button:hover {
+    color: black;
+    background-color: var(--hoverkleur-lichtroze);
+}
+
+header button:active {
+    background-color: var(--hoofdkleur-roze);
+}
+
 /*navigatie header styling button */
 
 header select {
     border: none;
     font-family: Futura-Light;
+
+    background-color: var(--achtergrond-kleur-wit);
 }
 
+/*navigatie header styling link */
 
+nav:first-of-type a {
+    color: var(--tekstkleur-zwart);
+}
+
+nav:first-of-type a:hover {
+    color: var(--hoofdkleur-roze);
+}
 
 
 
@@ -89,7 +138,7 @@ header select {
 
 /*section 1 positie */
 
-section:first-of-type {
+section:nth-of-type(1) {
     height: 32em;
     display: flex;
     flex-direction: column;
@@ -99,13 +148,13 @@ section:first-of-type {
     padding: 1em;
 }
 
-p:first-of-type {
+section:nth-of-type(1) p:nth-of-type(1) {
     padding-top: 1em;
 }
 
-section:first-of-type a {
+section:nth-of-type(1) a {
     margin-top: 1.5em;
-    color: white;
+    color: var(--tekstkleur-wit);
 
     border: 2px solid white;
     padding: 10px 20px;
@@ -118,16 +167,30 @@ section:first-of-type a {
 
 /* font section 1 */
 
-h1:first-of-type {
+section:nth-of-type(1) h1:first-of-type {
     font-size: 4.4em;
-    color: white;
+    color: var(--tekstkleur-wit);
     font-family: Caslon;
 }
 
+section:nth-of-type(1) p:nth-of-type(1) {
+    color: var(--tekstkleur-wit);
+    font-size: 1.2em;
+}
+
+/*section 1 styling link */
+
+section:nth-of-type(1) a:hover {
+    background-color: white;
+    color: var(--tekstkleur-zwart);
+}
+
+
+
 /*section 1 background */
 
-section:first-of-type {
-    background-image: url(images/MocoMuseumAmsterdam_buitenkant.jpeg);
+section:nth-of-type(1) {
+    background-image: url(images/Moco_Homepage.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -142,9 +205,9 @@ section:nth-of-type(2) {
     align-items: center;
     text-align: center;
     padding: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 0;
 
-    background-color: rgb(255,130,203)
+    background-color: var(--hoofdkleur-roze);
 }
 
 p:nth-of-type(2) {
@@ -155,17 +218,43 @@ section:nth-of-type(2) a {
     margin-top: 1.5em;
 }
 
-h2:first-of-type {
+section:nth-of-type(2) h2:first-of-type {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-/* font section 2 */
-section:nth-of-type(2) {
-    color: white;
+/* section 2 postitie van slider met tekst */
+
+section:nth-of-type(2) div {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap:1em;
+
+    margin-top: 2em;
 }
 
-h2:first-of-type {
+section:nth-of-type(2) div p {
+    padding: 0;
+
+    font-family:Futura-Bold;
+    font-size: 0.8em;
+}
+
+
+
+/* font section 2 */
+section:nth-of-type(2) {
+    color: var(--tekstkleur-wit);
+    font-size: 1.125em;
+}
+
+section:nth-of-type(2) h2:first-of-type {
     font-family: Caslon;
     font-size: 2.1em;
 }
@@ -187,6 +276,79 @@ section:nth-of-type(2) a {
     border-radius: 8px;
 }
 
+section:nth-of-type(2) a:hover {
+    background-color:  var(--hoverkleur-lichtroze);
+}
+
+/*section 2 styling checkbox*/
+
+section:nth-of-type(2) label {
+    z-index: 0;
+
+    position: relative;
+    display: inline-block;
+    
+    width: 60px;
+    height: 34px;
+}
+
+/* standaard styling van checkbox weghalen */
+section:nth-of-type(2) label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* niet mijn code bron:w3schools, wel een beetje aangepast */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--hoofdkleur-roze);
+    border: solid 0.1em white ;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: rgb(252,185,227);
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(252,185,227);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 /*section 3 positie */
 
 section:nth-of-type(3) ul {
@@ -199,7 +361,7 @@ section:nth-of-type(3) ul {
 }
 
 section:nth-of-type(3) ul li {
-	background-color: white;
+	background-color: var(--achtergrond-kleur-wit);
     border-radius: 8px;
 }
 
@@ -226,7 +388,7 @@ section:nth-of-type(3) ul li:nth-of-type(1) ul li:nth-of-type(1) {
 
 section:nth-of-type(3) ul li:nth-of-type(1) img {
     max-height: 100%;
-    max-width: 100%;
+    max-width:100%;
 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -303,9 +465,281 @@ section:nth-of-type(3) ul li:nth-of-type(3) h3 {
     font-size: 1.125em;
 }
 
+/* Section 4 positie */
+
+section:nth-of-type(4) h2 {
+    font-size: 2.1em;
+
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    color: var(--tekstkleur-wit);
+}
+
+section:nth-of-type(4) p:first-of-type {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+
+    color:var(--tekstkleur-wit);
+
+    font-size: 1.125em;
+}
+
+section:nth-of-type(4) h3 {
+    padding:1em;
+}
+
+section:nth-of-type(4) address {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+}
+
+section:nth-of-type(4) h4 {
+    padding-left: 1em;
+    padding-bottom: 0;
+    padding-right: 1em;
+    padding-top: 0;
+}
+
+/*img section 4 boven de tekst*/
+
+section:nth-of-type(4) div {
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(4) img {
+    order:-100;
+}
+
+/*img section 4 styling */
+
+section:nth-of-type(4) img {
+    border-radius: 8px;
+    
+    margin: 1em;
+}
+
+/*link section 4 styling */
+
+section:nth-of-type(4) a {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 8px;
+    
+    margin-left: 1em;
+    margin-bottom: 2em;
+
+    color: var(--tekstkleur-zwart);
+    font-family: Futura-Bold;
+}
+
+section:nth-of-type(4) a:hover {
+    background-color:  var(--hoverkleur-lichtroze);
+}
+
+/*styling section 4 tekst*/
+
+section:nth-of-type(4) div h3 {
+    font-family: Futura-Bold;
+    color: var(--tekstkleur-wit);
+}
+
+section:nth-of-type(4) div address {
+    color:var(--tekstkleur-wit);
+
+    font-style:normal;
+
+    font-size: 1.125em;
+}
+
+section:nth-of-type(4) div h4 {
+    color: var(--tekstkleur-wit);
+
+    font-size: 1.125em;
+}
+
+/*footer positie elementen*/
+
+footer div:nth-of-type(1) {
+    padding-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer a img {
+    width: 6em;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+footer div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: left;
+
+    gap: 2em;
+
+    margin-left:1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+footer div:nth-of-type(2) ul li {
+    padding-bottom: 0.5em;
+}
+
+footer div:nth-of-type(3) ul{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    padding: 1em;
+}
 
 
+/*//////////////////////////footer styling elementen////////////////////////////*/
 
+footer {
+    background-color: var(--achtergrond-kleur-wit);
+}
+
+footer div h2 {
+    color: var(--tekstkleur-zwart);
+    font-family: Futura-Bold;
+    font-size: 1.125em;
+}
+
+/*////////////////////////// styling footer div 1 /////////////////////////////*/
+
+footer div:nth-of-type(1) a {
+    margin-top: 1.5em;
+    color: var(--tekstkleur-zwart);
+
+    border: 1.5px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 8px;
+}
+/*hover state sign up link*/
+
+footer div:nth-of-type(1) a:hover {
+    background-color:black;
+
+    color:var(--tekstkleur-wit);
+}
+
+/*lijn voor scheiding*/
+
+footer div:nth-of-type(1) {
+    border-bottom: 1px solid grey;
+
+    padding-bottom: 2em;
+}
+
+/*///////////////// styling footer div 2 /////////////*/
+
+footer div:nth-of-type(2) ul {
+    width: 11em;
+
+    list-style: none;
+}
+
+footer div:nth-of-type(2) ul li a{
+    color: var(--tekstkleur-zwart);
+
+    text-decoration: none;
+}
+
+/*///////////////// styling footer div 3 /////////////*/
+
+footer div:nth-of-type(3) a {
+    text-decoration: none;
+
+    color: var(--tekstkleur-zwart);
+
+    font-size: 0.875em;
+}
+
+footer div:nth-of-type(3) ul li{
+    list-style: none;
+}
+
+/*/////////////////////////////// styling footer a hover state ///////////////////////////////*/
+
+footer div:nth-of-type(2) ul li a {
+    /*onderlijning net zo groot als tekst*/
+    display: inline-block;
+    position: relative;
+}
+
+footer div:nth-of-type(2) ul li a::after {
+    /*onderlijning onder de content*/
+    content: '';
+    position: absolute;
+
+    width: 100%;
+
+    /* het element in eerste instantie niet zichtbaar maken */
+    transform: scaleX(0);
+
+    height: 1px;
+    bottom: 0;
+    right: 0;
+
+    background-color: black;
+
+    transform-origin: bottom left;
+    transition: transform 0.4s ease-out;
+}
+
+footer div:nth-of-type(2) ul li a:hover::after {
+    /*zichtbaar na hover, lijn verplaatst zich over de x as*/
+    transform: scaleX(1);
+
+    /*lijn begint vanaf 'onder linkerkant'*/
+    transform-origin: bottom left;
+  }
+
+
+/*////////////////////// micro interactie, klikken op tickets button //////////////////////*/
+
+/* tickets beschikbaar */
+
+header p {
+    margin:0;
+    padding:0 1em;
+    max-height: 0;
+    overflow:hidden;
+        
+    transition:1s;
+}
+
+header.open p {
+    border-top: solid 0.1em lightgray;
+
+    padding: 1em;
+    max-height: 9em;
+}
 
 
 
